@@ -1,7 +1,9 @@
 import React, { createContext, useReducer, useMemo } from 'react';
 import rootReducer from './reducers';
+import { DEFAULT_LOCALE } from '../constants'
 
 const initialState = {
+  locale: DEFAULT_LOCALE,
   transactions: []
 }
 

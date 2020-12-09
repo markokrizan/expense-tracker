@@ -1,7 +1,7 @@
 import { useContext } from 'react';
 import { get } from 'lodash'
 
-import state from '../store';
+import state from '../store/store';
 
 const useSelector = stateKey => {
   const { store } = useContext(state);

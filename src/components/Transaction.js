@@ -1,6 +1,6 @@
 import React from 'react'
 
-import useDispatch from '../store/helpers/useDispatch'
+import useDispatch from '../hooks/useDispatch'
 import { deleteTransaction } from '../store/actions/transactions';
 
 const Transaction = ({ transaction }) => {

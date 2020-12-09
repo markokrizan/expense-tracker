@@ -3,10 +3,16 @@ import ReactDOM from 'react-dom';
 import './index.css';
 import App from './App';
 import reportWebVitals from './reportWebVitals';
+import { StateProvider } from '../src/store/store';
+import { TranslationProvider } from '../src/components/TranslationProvider'
 
 ReactDOM.render(
   <React.StrictMode>
-    <App />
+    <StateProvider>
+      <TranslationProvider>
+        <App />
+      </TranslationProvider>
+    </StateProvider>
   </React.StrictMode>,
   document.getElementById('root')
 );

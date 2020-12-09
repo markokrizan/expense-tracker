@@ -1,6 +1,6 @@
 import React, { useState } from 'react'
 
-import useDispatch from '../store/helpers/useDispatch'
+import useDispatch from '../hooks/useDispatch'
 import { addTransaction } from '../store/actions/transactions';
 
 const AddTransaction = () => {

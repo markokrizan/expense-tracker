@@ -1,6 +1,6 @@
 import React from 'react'
 import Transaction from './Transaction';
-import useSelector from '../store/helpers/useSelector'
+import useSelector from '../hooks/useSelector'
 
 const TransactionList = () => {
   const transactions = useSelector('transactions');

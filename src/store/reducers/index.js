@@ -1,6 +1,7 @@
 import { merge } from 'lodash'
 
 import transactionReducer from './transaction'
+import locale from './locale'
 
 function combineReducers(reducers) {  
   return (state = {}, action) => {
@@ -13,7 +14,8 @@ function combineReducers(reducers) {
 }
 
 const rootReducer = combineReducers({
-  transactions: transactionReducer
+  transactions: transactionReducer,
+  locale: locale
 })
 
 export default rootReducer;

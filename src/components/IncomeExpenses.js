@@ -1,5 +1,5 @@
 import React from 'react'
-import useSelector from '../store/helpers/useSelector'
+import useSelector from '../hooks/useSelector'
 
 export const IncomeExpenses = () => {
   const transactions = useSelector('transactions');

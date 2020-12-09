@@ -5,19 +5,22 @@ import IncomeExpenses from './components/IncomeExpenses';
 import TransactionList from './components/TransactionList';
 import AddTransaction from './components/AddTransaction';
 
-import { StateProvider } from './store/store';
+import useTranslation from './hooks/useTranslation'
+import { LanguageSwitch } from './components/LanguageSwitch';
+
 
 function App() {
   return (
-    <StateProvider>
-      <Header title={'Expense tracker'}/>
-      <div className="container">
-        <Balance/>
-        <IncomeExpenses/>
-        <TransactionList/>
-        <AddTransaction/>
-      </div>
-    </StateProvider>
+      <>
+        <Header title={useTranslation('TITLE')}/>
+        <LanguageSwitch/>
+        <div className="container">
+          <Balance/>
+          <IncomeExpenses/>
+          <TransactionList/>
+          <AddTransaction/>
+        </div>
+      </>
   );
 }
 
