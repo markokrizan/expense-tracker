@@ -1,13 +1,12 @@
-import { merge } from 'lodash'
 
 import transactionReducer from './transaction'
 import locale from './locale'
 
 function combineReducers(reducers) {  
   return (state = {}, action) => {
-    let newState = {};
+    let newState = {...state};
     for (let key in reducers) {
-      newState = merge(newState, reducers[key](state, action));
+      newState = reducers[key](newState, action);
     }
     return newState;
   }
