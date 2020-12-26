@@ -30,9 +30,7 @@ const AddTransaction = () => {
         </div>
         <div className="form-control">
           <label htmlFor="amount">
-            {useTranslation('AMOUNT')} 
-            <br />
-            {useTranslation('AMOUNT_HELP')}
+            {useTranslation('AMOUNT')} {useTranslation('AMOUNT_HELP')}
           </label>
           <input type="number" value={amount} onChange={e => setAmount(e.target.value)} placeholder={useTranslation('ENTER_AMOUNT_PLACEHOLDER')} />
         </div>
