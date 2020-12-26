@@ -1,6 +1,7 @@
 /* TODO: Convert to sass */
 
 @import url('https://fonts.googleapis.com/css?family=Lato&display=swap');
+@import 'utils';
 
 :root {
   --box-shadow: 0 1px 3px rgba(0, 0, 0, 0.12), 0 1px 2px rgba(0, 0, 0, 0.24);
@@ -10,19 +11,39 @@
   box-sizing: border-box;
 }
 
+.app-root {
+  width: 100%;
+}
+
 body {
   background-color: #f7f7f7;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
   min-height: 100vh;
   margin: 0;
   font-family: 'Lato', sans-serif;
 }
 
+.nav-bar {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 0 10px;
+  border-bottom: 1px solid #bbb;
+  width: 100%;
+  margin-bottom: 20px;
+}
+
+.home-link {
+  color: black;
+  text-decoration: none;
+}
+
+.settings-icon {
+  width: 30px;
+  cursor: pointer;
+}
+
 .container {
-  margin: 30px auto;
+  margin: 0 auto;
   width: 350px;
 }
 
@@ -143,7 +164,7 @@ input[type='number'] {
 } 
 
 .delete-btn {
-  background-image: url(./assets/trash.svg);
+  background-image: url(../assets/trash.svg);
   background-repeat: no-repeat;
   background-size: auto;
   background-color: transparent;
@@ -164,7 +185,7 @@ input[type='number'] {
 }
 
 .edit-btn {
-  background-image: url(./assets/pencil.svg);
+  background-image: url(../assets/pencil.svg);
   background-repeat: no-repeat;
   background-size: auto;
   background-color: transparent;
@@ -190,6 +211,12 @@ input[type='number'] {
 
 .list li:hover .edit-btn {
   opacity: 1;
+}
+
+.settings-option {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
 }
 
 @media (max-width: 320px) {

@@ -10,5 +10,7 @@ export default {
   YOUR_BALANCE: 'Saldo',
   INCOME: 'Priliv',
   EXPENSE: 'Trosak',
-  HISTORY: 'Istorija'
+  HISTORY: 'Istorija',
+  SETTINGS: 'Podesavanja',
+  LANGUAGE: 'Jezik'
 }

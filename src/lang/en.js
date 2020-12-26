@@ -10,5 +10,7 @@ export default {
   YOUR_BALANCE: 'Your balance',
   INCOME: 'Income',
   EXPENSE: 'Expense',
-  HISTORY: 'History'
+  HISTORY: 'History',
+  SETTINGS: 'Settings',
+  LANGUAGE: 'Language'
 }
