@@ -8,13 +8,13 @@ import { LOCALES } from '../constants'
 
 export const LanguageSwitch = () => {
   const currentLocale = useSelector('locale')
-  const options = LOCALES.map(locale => <option value={locale} selected={locale === currentLocale}>{locale}</option>)
+  const options = LOCALES.map(locale => <option key={locale} value={locale}>{locale}</option>)
 
   const dispatch = useDispatch()
 
   return (
     <div>
-      <select onChange={e => dispatch(changeLocale(e.target.value))}>
+      <select onChange={e => dispatch(changeLocale(e.target.value))} defaultValue={currentLocale}>
         {options}
       </select>
     </div>
