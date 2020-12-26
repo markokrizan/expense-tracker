@@ -9,7 +9,7 @@ const Transaction = ({ transaction }) => {
   return (
     <li className={transaction.amount < 0 ? "minus" : "plus"}>
       {transaction.text} <span>{transaction.amount}</span>
-      <button class="delete-btn" onClick={() => dispatch(deleteTransaction(transaction.id))}>x</button>
+      <button className="delete-btn" onClick={() => dispatch(deleteTransaction(transaction.id))}>x</button>
     </li>
   )
 }
