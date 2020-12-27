@@ -1,5 +1,6 @@
 import React from 'react'
 import LanguageSwitch from './LanguageSwitch'
+import CurrencySwitch from './CurrencySwitch'
 import useTranslation from '../hooks/useTranslation'
 
 const Settings = () => {
@@ -9,7 +10,9 @@ const Settings = () => {
       <div className="settings-option">
         <span>{useTranslation('LANGUAGE')}</span> <LanguageSwitch/>
       </div>
-     
+      <div className="settings-option">
+        <span>{useTranslation('CURRENCY')}</span> <CurrencySwitch/>
+      </div>
     </div>
   )
 }

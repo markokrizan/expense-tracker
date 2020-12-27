@@ -1,6 +1,7 @@
 
-import transactionReducer from './transaction'
+import transaction from './transaction'
 import locale from './locale'
+import currency from './currency'
 
 function combineReducers(reducers) {  
   return (state = {}, action) => {
@@ -13,8 +14,9 @@ function combineReducers(reducers) {
 }
 
 const rootReducer = combineReducers({
-  transactions: transactionReducer,
-  locale: locale
+  transaction,
+  locale,
+  currency
 })
 
 export default rootReducer;

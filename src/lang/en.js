@@ -12,5 +12,6 @@ export default {
   EXPENSE: 'Expense',
   HISTORY: 'History',
   SETTINGS: 'Settings',
-  LANGUAGE: 'Language'
+  LANGUAGE: 'Language',
+  CURRENCY: 'Currency'
 }

@@ -12,5 +12,6 @@ export default {
   EXPENSE: 'Trosak',
   HISTORY: 'Istorija',
   SETTINGS: 'Podesavanja',
-  LANGUAGE: 'Jezik'
+  LANGUAGE: 'Jezik',
+  CURRENCY: 'Valuta'
 }

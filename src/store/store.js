@@ -1,11 +1,12 @@
 import React, { createContext, useReducer, useMemo } from 'react';
 import rootReducer from './reducers';
-import { DEFAULT_LOCALE } from '../constants'
+import { DEFAULT_LOCALE, DEFAULT_CURRENCY } from '../constants'
 import utilService from '../services/util'
 
 const defaultState = {
   locale: DEFAULT_LOCALE,
-  transactions: []
+  transactions: [],
+  currency: DEFAULT_CURRENCY
 }
 
 const state = createContext(defaultState);

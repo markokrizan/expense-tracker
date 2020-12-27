@@ -4,6 +4,7 @@ import useTranslation from '../hooks/useTranslation'
 
 const Balance = () => {
   const transactions = useSelector('transactions');
+  const currency = useSelector('currency')
 
   const total = transactions.reduce((acc, transaction) => {
     return acc += transaction.amount;
@@ -12,7 +13,7 @@ const Balance = () => {
   return (
     <div>
       <h4>{useTranslation('YOUR_BALANCE')}</h4>
-      <h1>${total}</h1>
+      <h1>{currency} {total}</h1>
     </div>
   )
 }

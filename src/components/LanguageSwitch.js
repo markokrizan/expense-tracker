@@ -8,7 +8,7 @@ import { LOCALES } from '../constants'
 
 const LanguageSwitch = () => {
   const currentLocale = useSelector('locale')
-  const options = LOCALES.map(locale => <option key={locale} value={locale}>{locale}</option>)
+  const options = LOCALES.map(locale => <option key={locale.code} value={locale.code}>{locale.name}</option>)
 
   const dispatch = useDispatch()
 
