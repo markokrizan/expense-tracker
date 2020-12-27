@@ -13,7 +13,7 @@ const Balance = () => {
   return (
     <div>
       <h4>{useTranslation('YOUR_BALANCE')}</h4>
-      <h1>{currency} {total}</h1>
+      <h1><span data-testid="balance-currency">{currency}</span> <span data-testid="balance-total">{total}</span></h1>
     </div>
   )
 }
