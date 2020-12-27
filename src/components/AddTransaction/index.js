@@ -1,8 +1,8 @@
 import React, { useState } from 'react'
 
-import useDispatch from '../hooks/useDispatch'
-import useTranslation from '../hooks/useTranslation'
-import { addTransaction } from '../store/actions/transactions';
+import useDispatch from '../../hooks/useDispatch'
+import useTranslation from '../../hooks/useTranslation'
+import { addTransaction } from '../../store/actions/transactions';
 
 const AddTransaction = () => {
   const [text, setText] = useState('');
@@ -27,13 +27,14 @@ const AddTransaction = () => {
       <form onSubmit={onSubmit}>
         <div className="form-control">
           <label htmlFor="text">{useTranslation('TEXT')}</label>
-          <input type="text" value={text} onChange={e => setText(e.target.value)} placeholder={useTranslation('ENTER_TEXT_PLACEHOLDER')} />
+          <input type="text" id="text" value={text} onChange={e => setText(e.target.value)} placeholder={useTranslation('ENTER_TEXT_PLACEHOLDER')} />
         </div>
         <div className="form-control">
           <label htmlFor="amount">
-            {useTranslation('AMOUNT')} {useTranslation('AMOUNT_HELP')}
+            {useTranslation('AMOUNT')}
           </label>
-          <input type="number" value={amount} onChange={e => setAmount(e.target.value)} placeholder={useTranslation('ENTER_AMOUNT_PLACEHOLDER')} />
+          {useTranslation('AMOUNT_HELP')}
+          <input type="number" id="amount" value={amount} onChange={e => setAmount(e.target.value)} placeholder={useTranslation('ENTER_AMOUNT_PLACEHOLDER')} />
         </div>
         <button className="btn">{useTranslation('ADD_TRANSACTION')}</button>
       </form>
