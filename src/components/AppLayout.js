@@ -15,14 +15,16 @@ const AppLayout = () => {
       <Header title={useTranslation('TITLE')}/>
       <Suspense fallback={<div>{useTranslation('LOADING')}</div>}>
         <Switch>
-          <div className="container">
-            <Route path="/" exact>
-              <Main/>
-            </Route>
-            <Route path="/settings">
-              <Settings />
-            </Route>
-          </div>
+          <>
+            <div className="container">
+              <Route path="/" exact>
+                <Main/>
+              </Route>
+              <Route path="/settings">
+                <Settings />
+              </Route>
+            </div>
+          </>
         </Switch>
       </Suspense>
     </Router>

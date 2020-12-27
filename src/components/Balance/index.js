@@ -1,6 +1,6 @@
 import React from 'react'
-import useSelector from '../hooks/useSelector'
-import useTranslation from '../hooks/useTranslation'
+import useSelector from '../../hooks/useSelector'
+import useTranslation from '../../hooks/useTranslation'
 
 const Balance = () => {
   const transactions = useSelector('transactions');
