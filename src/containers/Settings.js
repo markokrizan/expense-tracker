@@ -1,6 +1,6 @@
 import React from 'react'
-import LanguageSwitch from './LanguageSwitch'
-import CurrencySwitch from './CurrencySwitch'
+import LanguageSwitch from '../components/LanguageSwitch'
+import CurrencySwitch from '../components/CurrencySwitch'
 import useTranslation from '../hooks/useTranslation'
 
 const Settings = () => {

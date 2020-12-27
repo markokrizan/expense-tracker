@@ -13,5 +13,6 @@ export default {
   HISTORY: 'History',
   SETTINGS: 'Settings',
   LANGUAGE: 'Language',
-  CURRENCY: 'Currency'
+  CURRENCY: 'Currency',
+  LOADING: 'Loading...'
 }

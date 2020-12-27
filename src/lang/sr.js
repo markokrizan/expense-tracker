@@ -13,5 +13,6 @@ export default {
   HISTORY: 'Istorija',
   SETTINGS: 'Podesavanja',
   LANGUAGE: 'Jezik',
-  CURRENCY: 'Valuta'
+  CURRENCY: 'Valuta',
+  LOADING: 'Ucitavanje...'
 }
