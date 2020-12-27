@@ -11,3 +11,11 @@ export const renderWithContexts = component => {
     </StateProvider>
   );
 }
+
+export const CombinedProvider = ({ children }) => (
+  <StateProvider>
+    <TranslationProvider>
+      {children}
+    </TranslationProvider>
+  </StateProvider>
+)
