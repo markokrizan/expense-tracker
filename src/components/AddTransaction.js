@@ -16,7 +16,8 @@ const AddTransaction = () => {
     dispatch(addTransaction({
         id:  Math.floor(Math.random() * 100000000),
         text,
-        amount: parseInt(amount)
+        amount: parseInt(amount),
+        createdAt: new Date()
     }))
   }
 
